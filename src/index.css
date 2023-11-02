@@ -1,1 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+:root {
+  --font-size-mobile: 50%;
+  --font-size-desktop: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "San Francisco", "Segoe UI", "Helvetica Neue",
+    "-apple-system", "BlinkMacSystemFont", "Arial", "sans-serif";
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: var(--font-size-mobile);
+}
+
+@media screen and (min-width: 601px) {
+  html {
+    font-size: var(--font-size-desktop);
+  }
+}
